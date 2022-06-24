@@ -1,7 +1,5 @@
 let helpFunctions = {}
-helpFunctions.createList = function (arr){
-    let li = ''
-    arr.forEach( elm => li += `<li>${elm}</li>`)
-    return li
-}
+
+    helpFunctions.createElementsList = arr => arr.map( (el, i) => <li key={i}>{el}</li>)
+    
 export default helpFunctions
